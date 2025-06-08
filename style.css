@@ -2,12 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Savate", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: semibold;
+    font-style: normal;
 }
 
+/* .savate-<uniquifier> {
+    font-family: "Savate", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+.nav {
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+.nav li{
+    list-style: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+
+
+    &:hover{
+        color: #f05324;
+        cursor: pointer;
+        font-size: 23px;
+    }
+   
+}
 .hero{
     width: 100%;
-    height: 300px;
-    background-color: red;
+    height: 80%;
+    
+}
+.hero-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* background-image: url(./assets/fondo.png); */
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(80%,transparent);
+}
+.logo{
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 100px;
+}
+.fondo{
+    mask-image: linear-gradient(black 80%, transparent);
+    width: 100%;
+    height: 100vh;
+    
 }
 .container{
     width: 100%;
@@ -42,7 +100,7 @@
 .tarjeta1{
     width: 500px;
     height: 410px;
-    background-color: blue;
+    background-color: #f05324;
     /* display: flex; */
     justify-content: center;
     align-items: center;    
@@ -51,7 +109,7 @@
 .tarjeta2{
     width: 500px;
     height: 190px;
-    background-color: blue;
+    background-color: #f05324;
     /* display: flex; */
     justify-content: center;
     align-items: center; 
